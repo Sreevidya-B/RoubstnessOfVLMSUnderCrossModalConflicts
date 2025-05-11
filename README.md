@@ -4,7 +4,7 @@
 This project We investigate how Vision-Language Models (VLMs) respond when visual and textual inputs contradict each other. we design two experimental scenarios: text conflicts and image conflicts. We systematically classify responses into multiple categories to evaluate the behavior of the models.
 
 ## Directory Structure
-- `VLMRobustnessV2.ipynb/`: Contains ipynb script for insalling all code dependencies, loading BLIP-2 and LLaVA-7B models and evaluate by picking up images from all categories in CoCo dataset. ( V2 version contains lots of samples used for evaluation, improved conflict map and used diffusion noise for image perturbation ) 
+- `VLMRobustnessV2.ipynb`: Contains ipynb script for insalling all code dependencies, loading BLIP-2 and LLaVA-7B models and evaluate by picking up images from all categories in CoCo dataset. ( V2 version contains lots of samples used for evaluation, improved conflict map and used diffusion noise for image perturbation ) 
   - `Project_Proposal.pdf`: Project proposal. 
   - `Project_Milestone_Report.pdf`: Project milestone report. 
   - `Project_Final_Report.pdf`: Project final report 
