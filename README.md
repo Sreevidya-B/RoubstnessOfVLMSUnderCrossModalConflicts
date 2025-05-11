@@ -6,7 +6,6 @@ This project We investigate how Vision-Language Models (VLMs) respond when visua
 ## Directory Structure
 - `VLMRobustnessV2.ipynb/`: Contains ipynb script for insalling all code dependencies, loading BLIP-2 and LLaVA-7B models and evaluate by picking up images from all categories in CoCo dataset. ( V2 version contains lots of samples used for evaluation, improved conflict map and used diffusion noise for image perturbation ) 
   - `VLMRoustnessPyCoco.ipynb`: Script to do initial model evaluation for project milestone with limited examples,  earlier project milestone. ( V1 version with limited samples, basic conflict map and used gaussian noise distribution for image perturbation )
-  - `Text mitigation.ipynb`: @Arin to merge changes and rename file
   - `Image mitigation.ipynb`: @Rati to merge changes and rename file
   - `Project_Proposal.pdf`: Project proposal file. 
   - `results.csv`: Evaluation results of the baseline model.
@@ -15,15 +14,17 @@ This project We investigate how Vision-Language Models (VLMs) respond when visua
   - `image_conflict_results_v2_400samples.csv`: Contains V2 image perturbation evaluation results after running for 400 samples.
   - `text_conflict_results2ndRun.csv`: Contains text conflict evaluation results after running for few samples.
   - `image_conflict_results2ndRun.csv`: Contains image perturbation evaluation results after running for few samples.
-  - `text_mitigation_results.csv`: @Arin to upload text mitigation results
   - `text_mitigation_results.csv`: @Rati to upload image perturbation mitigation results
 - `main.tex`: LaTeX file for the project report @Vidya to upload milestone report.
 - `Project_Milestone1.tex`: LaTeX file for the project milestone report @Vidya to upload final report.
+- `TextMitigation/`: Contains TextMitigation.ipynb
+- `blip2_direct_mitigation_results.csv`: Contains BLIP2 text conflict mitigation results.
+- `llava_direct_mitigation_80_categories_results.csv`: Contains LLAVA text conflict mitigation results.
 
 ## Code Run Instructions
 1. Run `VLMRobustnessV2.ipynb` to generate evaluation results for BLIP2 and LLaVA-7B models in Results directory ( default uses diffusion noise
 2. Uncomment apply_image_perturbation in 7. Experiment Execution - Image Conflict section and run `VLMRobustnessV2.ipynb` to generate evaluation results for BLIP2 and LLaVA-7B models in Results directory using gaussian noise. 
-3. Run `Text mitigation.ipynb` to generate text mitigation results for BLIP2 and LLaVA-7B models in Results directory taking resultant text evaluation results as input
+3. Run `TextMitigation.ipynb` to generate text mitigation results for BLIP2 and LLaVA-7B models taking resultant text evaluation results as input from Results directory.
 4. Run `Image mitigation.ipynb` to generate image perturbation mitigation results for BLIP2 and LLaVA-7B models in Results directory taking resultant image perturbation evaluation results as input
 
 ## Evaluation Metrics - Text Conflict Experiment
